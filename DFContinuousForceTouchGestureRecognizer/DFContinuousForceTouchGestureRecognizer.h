@@ -1,49 +1,48 @@
 //
 //  UIContinuousForceTouchGestureRecognizer.h
-//  Inmoji
 //
 //  Created by Daniel Fogg on 9/29/15.
-//  Copyright © 2015 Inmoji, Inc. All rights reserved.
+//  Copyright © 2015 Daniel Fogg. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class UIContinuousForceTouchGestureRecognizer;
+@class DFContinuousForceTouchGestureRecognizer;
 
-@protocol UIContinuousForceTouchDelegate <NSObject>
+@protocol DFContinuousForceTouchDelegate <NSObject>
 
 // Force touch was recognized according to the thresholds set by baseForceTouchPressure, triggeringForceTouchPressure, and forceTouchDelay
-- (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer;
+- (void) forceTouchRecognized:(DFContinuousForceTouchGestureRecognizer*)recognizer;
 
 @optional
 // Force touch started happening. Note that this is not necessary the moment when all touches started happening, just the moment when the first touch occurred with at least a force of baseForceTouchPressure
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
 
 // Force touch movement happening. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
 
 // Force touch was cancelled. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
 
 // Force touch ended. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
 
 // Force touch timed out. See notes about the timeout property below. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer;
+- (void) forceTouchDidTimeout:(DFContinuousForceTouchGestureRecognizer*)recognizer;
 
 
 @end
 
 
-@interface UIContinuousForceTouchGestureRecognizer : UIGestureRecognizer
+@interface DFContinuousForceTouchGestureRecognizer : UIGestureRecognizer
 
 // The lowest pressuare at which a force touch will begin to be detected,
 //      anything lower is a normal press and will not trigger force touch logic
-// Defaults to 1.0f;
+// Defaults to 1.0f on a scale from 0.0f to 6.667f;
 @property(nonatomic, assign) CGFloat baseForceTouchPressure;
 
 // The pressure at which a force touch will be triggered
-// Defaults to 2.5f
+// Defaults to 2.5f on a scale from 0.0f to 6.667f;
 @property(nonatomic, assign) CGFloat triggeringForceTouchPressure;
 
 // The delay in seconds after which, if the baseForceTouchPressure or greater is
@@ -62,7 +61,7 @@
 @property(nonatomic, assign) CGFloat timeout;
 
 // Set this delegate to get continuous feedback on pressure changes
-@property(nonatomic, weak) id<UIContinuousForceTouchDelegate> forceTouchDelegate;
+@property(nonatomic, weak) id<DFContinuousForceTouchDelegate> forceTouchDelegate;
 
 
 @end

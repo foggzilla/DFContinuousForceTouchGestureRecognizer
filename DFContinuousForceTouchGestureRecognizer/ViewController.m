@@ -1,20 +1,20 @@
 //
 //  ViewController.m
-//  UIContinuousForceTouchGestureRecognizer
+//  DFContinuousForceTouchGestureRecognizer
 //
 //  Created by Daniel Fogg on 9/30/15.
 //  Copyright © 2015 Daniel J Fogg. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "UIContinuousForceTouchGestureRecognizer.h"
+#import "DFContinuousForceTouchGestureRecognizer.h"
 
-@interface ViewController ()<UIContinuousForceTouchDelegate>
+@interface ViewController ()<DFContinuousForceTouchDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@property (strong, nonatomic) UIContinuousForceTouchGestureRecognizer* imageForceTouchRecognizer;
-@property (strong, nonatomic) UIContinuousForceTouchGestureRecognizer* buttonForceTouchRecognizer;
+@property (strong, nonatomic) DFContinuousForceTouchGestureRecognizer* imageForceTouchRecognizer;
+@property (strong, nonatomic) DFContinuousForceTouchGestureRecognizer* buttonForceTouchRecognizer;
 @property (strong, nonatomic) UITapGestureRecognizer* tapGestureRecognizer;
 @end
 
@@ -23,14 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _imageForceTouchRecognizer = [[UIContinuousForceTouchGestureRecognizer alloc] init];
+    _imageForceTouchRecognizer = [[DFContinuousForceTouchGestureRecognizer alloc] init];
     _imageForceTouchRecognizer.timeout = 0.5f;
     _imageForceTouchRecognizer.forceTouchDelay = 0.2f;
     _imageForceTouchRecognizer.baseForceTouchPressure = 3.0f;
     _imageForceTouchRecognizer.triggeringForceTouchPressure = 6.0f;
     _imageForceTouchRecognizer.forceTouchDelegate = self;
     
-    _buttonForceTouchRecognizer = [[UIContinuousForceTouchGestureRecognizer alloc] init];
+    _buttonForceTouchRecognizer = [[DFContinuousForceTouchGestureRecognizer alloc] init];
     _buttonForceTouchRecognizer.timeout = 0.5f;
     _buttonForceTouchRecognizer.forceTouchDelay = 0.2f;
     _buttonForceTouchRecognizer.baseForceTouchPressure = 3.0f;
@@ -75,7 +75,7 @@
 #pragma UIContinuousForceTouchDelegate
 
 //required
-- (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer {
+- (void) forceTouchRecognized:(DFContinuousForceTouchGestureRecognizer*)recognizer {
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformIdentity;
         [self.imageView setNeedsDisplay];
@@ -92,7 +92,7 @@
 }
 
 //optional
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
     CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
@@ -103,7 +103,7 @@
     }
 }
 
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
     CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
@@ -114,7 +114,7 @@
     }
 }
 
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformIdentity;
         [self.imageView setNeedsDisplay];
@@ -125,7 +125,7 @@
     
 }
 
-- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
+- (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformIdentity;
         [self.imageView setNeedsDisplay];
@@ -135,7 +135,7 @@
     }
 }
 
-- (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer {
+- (void) forceTouchDidTimeout:(DFContinuousForceTouchGestureRecognizer*)recognizer {
     if(recognizer == _imageForceTouchRecognizer) {
         self.imageView.transform = CGAffineTransformIdentity;
         [self.imageView setNeedsDisplay];

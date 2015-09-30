@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8B3602B1BBC3CB600BECD2F"
-               BuildableName = "UIContinuousForceTouchGestureRecognizer.app"
-               BlueprintName = "UIContinuousForceTouchGestureRecognizer"
-               ReferencedContainer = "container:UIContinuousForceTouchGestureRecognizer.xcodeproj">
+               BuildableName = "DFContinuousForceTouchGestureRecognizer.app"
+               BlueprintName = "DFContinuousForceTouchGestureRecognizer"
+               ReferencedContainer = "container:DFContinuousForceTouchGestureRecognizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3602B1BBC3CB600BECD2F"
-            BuildableName = "UIContinuousForceTouchGestureRecognizer.app"
-            BlueprintName = "UIContinuousForceTouchGestureRecognizer"
-            ReferencedContainer = "container:UIContinuousForceTouchGestureRecognizer.xcodeproj">
+            BuildableName = "DFContinuousForceTouchGestureRecognizer.app"
+            BlueprintName = "DFContinuousForceTouchGestureRecognizer"
+            ReferencedContainer = "container:DFContinuousForceTouchGestureRecognizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3602B1BBC3CB600BECD2F"
-            BuildableName = "UIContinuousForceTouchGestureRecognizer.app"
-            BlueprintName = "UIContinuousForceTouchGestureRecognizer"
-            ReferencedContainer = "container:UIContinuousForceTouchGestureRecognizer.xcodeproj">
+            BuildableName = "DFContinuousForceTouchGestureRecognizer.app"
+            BlueprintName = "DFContinuousForceTouchGestureRecognizer"
+            ReferencedContainer = "container:DFContinuousForceTouchGestureRecognizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8B3602B1BBC3CB600BECD2F"
-            BuildableName = "UIContinuousForceTouchGestureRecognizer.app"
-            BlueprintName = "UIContinuousForceTouchGestureRecognizer"
-            ReferencedContainer = "container:UIContinuousForceTouchGestureRecognizer.xcodeproj">
+            BuildableName = "DFContinuousForceTouchGestureRecognizer.app"
+            BlueprintName = "DFContinuousForceTouchGestureRecognizer"
+            ReferencedContainer = "container:DFContinuousForceTouchGestureRecognizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

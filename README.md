@@ -1,4 +1,4 @@
-# UIContinuousForceTouchGestureRecognizer
+# DFContinuousForceTouchGestureRecognizer
 iOS Force Touch gesture recognizer that will stream force updates to the delegate for the user's finger pressure changes. It gives you the capability to detect force touch and monitor pressure changes on a view in order to adapt your ui for an added dimension of interaction.
 
 This is only useful for running on a physical device that supports force touch.
@@ -7,39 +7,39 @@ To see this in action run the sample program on a device that supports force tou
 
 ## Usage
 
-Create a `UIContinuousForceTouchGestureRecognizer`, add it to a view like any other gesture recognizer:
+Create a `DFContinuousForceTouchGestureRecognizer`, add it to a view like any other gesture recognizer:
 
-    UIContinuousForceTouchGestureRecognizer* forceTouchRecognizer = [[UIContinuousForceTouchGestureRecognizer alloc] init];
+    DFContinuousForceTouchGestureRecognizer* forceTouchRecognizer = [[DFContinuousForceTouchGestureRecognizer alloc] init];
     forceTouchRecognizer.forceTouchDelegate = self;
     [myView addGestureRecognizer:forceTouchRecognizer];
 
     ...
 
-Implement the `UIContinuousForceTouchDelegate` protocol to receive updates as the user's force changes:
+Implement the `DFContinuousForceTouchDelegate` protocol to receive updates as the user's force changes:
 
-    #pragma UIContinuousForceTouchDelegate
+    #pragma DFContinuousForceTouchDelegate
 
-    - (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer {
+    - (void) forceTouchRecognized:(DFContinuousForceTouchGestureRecognizer*)recognizer {
         //trigger force touch action
     }
 
-    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //do something cool
     }
 
-    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //do something cool
     }
 
-    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //reset cool effects
     }
 
-    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(DFContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //reset cool effects
     }
 
-    - (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer {
+    - (void) forceTouchDidTimeout:(DFContinuousForceTouchGestureRecognizer*)recognizer {
         //reset cool effects
     }
 

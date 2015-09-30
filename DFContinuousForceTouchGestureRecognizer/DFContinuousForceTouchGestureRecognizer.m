@@ -1,12 +1,11 @@
 //
-//  UIContinuousForceTouchGestureRecognizer.m
-//  Inmoji
+//  DFContinuousForceTouchGestureRecognizer.m
 //
 //  Created by Daniel Fogg on 9/29/15.
-//  Copyright © 2015 Inmoji, Inc. All rights reserved.
+//  Copyright © 2015 Daniel Fogg. All rights reserved.
 //
 
-#import "UIContinuousForceTouchGestureRecognizer.h"
+#import "DFContinuousForceTouchGestureRecognizer.h"
 #import <UIKit/UIGestureRecognizerSubclass.h>
 
 static CGFloat const kForceTouchBaseDefaultPressureThreshold = 1.0f;
@@ -15,7 +14,7 @@ static CGFloat const kForceTouchDefaultDelay = 0.5f;
 static CGFloat const kDefaultTouchTimeout = 1.5f;
 
 
-@interface UIContinuousForceTouchGestureRecognizer()
+@interface DFContinuousForceTouchGestureRecognizer()
 
 @property(nonatomic, assign) NSTimeInterval gestureStartTime;
 @property(nonatomic, assign) BOOL forceTouchFired;
@@ -29,7 +28,7 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
 
 @end
 
-@implementation UIContinuousForceTouchGestureRecognizer
+@implementation DFContinuousForceTouchGestureRecognizer
 
 - (instancetype) init {
     self = [super init];

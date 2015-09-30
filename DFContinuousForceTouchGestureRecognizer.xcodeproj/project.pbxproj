@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8B3605A1BBC81B500BECD2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B3604D1BBC81B500BECD2F /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		F8B3605B1BBC81B500BECD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B3604E1BBC81B500BECD2F /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		F8B3605C1BBC81B500BECD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B3604F1BBC81B500BECD2F /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F8B3605D1BBC81B500BECD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B360511BBC81B500BECD2F /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		F8B3605E1BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360541BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m */; settings = {ASSET_TAGS = (); }; };
+		F8B3605F1BBC81B500BECD2F /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B360551BBC81B500BECD2F /* elephant.png */; settings = {ASSET_TAGS = (); }; };
+		F8B360601BBC81B500BECD2F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8B360561BBC81B500BECD2F /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		F8B360611BBC81B500BECD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360571BBC81B500BECD2F /* main.m */; settings = {ASSET_TAGS = (); }; };
+		F8B360621BBC81B500BECD2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360591BBC81B500BECD2F /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8B3602C1BBC3CB600BECD2F /* DFContinuousForceTouchGestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFContinuousForceTouchGestureRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B3604C1BBC81B500BECD2F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8B3604D1BBC81B500BECD2F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8B3604E1BBC81B500BECD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8B360501BBC81B500BECD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8B360521BBC81B500BECD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8B360531BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFContinuousForceTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		F8B360541BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFContinuousForceTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		F8B360551BBC81B500BECD2F /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
+		F8B360561BBC81B500BECD2F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8B360571BBC81B500BECD2F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8B360581BBC81B500BECD2F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8B360591BBC81B500BECD2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8B360291BBC3CB600BECD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8B360231BBC3CB600BECD2F = {
+			isa = PBXGroup;
+			children = (
+				F8B3604B1BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer */,
+				F8B3602D1BBC3CB600BECD2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8B3602D1BBC3CB600BECD2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B3602C1BBC3CB600BECD2F /* DFContinuousForceTouchGestureRecognizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8B3604B1BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				F8B360531BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.h */,
+				F8B360541BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m */,
+				F8B360581BBC81B500BECD2F /* ViewController.h */,
+				F8B360591BBC81B500BECD2F /* ViewController.m */,
+				F8B3604C1BBC81B500BECD2F /* AppDelegate.h */,
+				F8B3604D1BBC81B500BECD2F /* AppDelegate.m */,
+				F8B3604E1BBC81B500BECD2F /* Assets.xcassets */,
+				F8B3604F1BBC81B500BECD2F /* LaunchScreen.storyboard */,
+				F8B360511BBC81B500BECD2F /* Main.storyboard */,
+				F8B360551BBC81B500BECD2F /* elephant.png */,
+				F8B360561BBC81B500BECD2F /* Info.plist */,
+				F8B360571BBC81B500BECD2F /* main.m */,
+			);
+			path = DFContinuousForceTouchGestureRecognizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8B3602B1BBC3CB600BECD2F /* DFContinuousForceTouchGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B360431BBC3CB700BECD2F /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer" */;
+			buildPhases = (
+				F8B360281BBC3CB600BECD2F /* Sources */,
+				F8B360291BBC3CB600BECD2F /* Frameworks */,
+				F8B3602A1BBC3CB600BECD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DFContinuousForceTouchGestureRecognizer;
+			productName = UIContinuousForceTouchGestureRecognizer;
+			productReference = F8B3602C1BBC3CB600BECD2F /* DFContinuousForceTouchGestureRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8B360241BBC3CB600BECD2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Daniel J Fogg";
+				TargetAttributes = {
+					F8B3602B1BBC3CB600BECD2F = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = F8B360271BBC3CB600BECD2F /* Build configuration list for PBXProject "DFContinuousForceTouchGestureRecognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8B360231BBC3CB600BECD2F;
+			productRefGroup = F8B3602D1BBC3CB600BECD2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8B3602B1BBC3CB600BECD2F /* DFContinuousForceTouchGestureRecognizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8B3602A1BBC3CB600BECD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B3605F1BBC81B500BECD2F /* elephant.png in Resources */,
+				F8B3605D1BBC81B500BECD2F /* Main.storyboard in Resources */,
+				F8B3605B1BBC81B500BECD2F /* Assets.xcassets in Resources */,
+				F8B360601BBC81B500BECD2F /* Info.plist in Resources */,
+				F8B3605C1BBC81B500BECD2F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8B360281BBC3CB600BECD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8B3605E1BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m in Sources */,
+				F8B360611BBC81B500BECD2F /* main.m in Sources */,
+				F8B360621BBC81B500BECD2F /* ViewController.m in Sources */,
+				F8B3605A1BBC81B500BECD2F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8B3604F1BBC81B500BECD2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B360501BBC81B500BECD2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F8B360511BBC81B500BECD2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B360521BBC81B500BECD2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8B360411BBC3CB700BECD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8B360421BBC3CB700BECD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8B360441BBC3CB700BECD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/DFContinuousForceTouchGestureRecognizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foggzilla.DFContinuousForceTouchGestureRecognizer;
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+			};
+			name = Debug;
+		};
+		F8B360451BBC3CB700BECD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/DFContinuousForceTouchGestureRecognizer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foggzilla.DFContinuousForceTouchGestureRecognizer;
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8B360271BBC3CB600BECD2F /* Build configuration list for PBXProject "DFContinuousForceTouchGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B360411BBC3CB700BECD2F /* Debug */,
+				F8B360421BBC3CB700BECD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B360431BBC3CB700BECD2F /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B360441BBC3CB700BECD2F /* Debug */,
+				F8B360451BBC3CB700BECD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8B360241BBC3CB600BECD2F /* Project object */;
+}
