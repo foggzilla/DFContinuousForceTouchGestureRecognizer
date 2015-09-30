@@ -19,27 +19,27 @@ Implement the `UIContinuousForceTouchDelegate` protocol to receive updates as th
 
     #pragma UIContinuousForceTouchDelegate
 
-    - (void) forceTouchRecognized {
+    - (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer {
         //trigger force touch action
     }
 
-    - (void) forceTouchDidStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //do something cool
     }
 
-    - (void) forceTouchDidMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //do something cool
     }
 
-    - (void) forceTouchDidCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //reset cool effects
     }
 
-    - (void) forceTouchDidEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    - (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
         //reset cool effects
     }
 
-    - (void) forceTouchDidTimeout {
+    - (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer {
         //reset cool effects
     }
 
