@@ -58,7 +58,7 @@
 
 - (void) buttonTapped:(id)sender {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[[UIAlertView alloc] initWithTitle:@"Button Tap" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        [self showAlertTitle:@"Button Tap" message:@"YEAH!!"];
     });
 }
 
@@ -67,7 +67,7 @@
 
 - (void) tapped:(id)sender {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[[UIAlertView alloc] initWithTitle:@"Image Tap" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        [self showAlertTitle:@"Image Tap" message:@"YEAH!!"];
     });
 }
 
@@ -80,13 +80,13 @@
         self.imageView.transform = CGAffineTransformIdentity;
         [self.imageView setNeedsDisplay];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[[UIAlertView alloc] initWithTitle:@"Force Touch Image" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [self showAlertTitle:@"Force Touch Image" message:@"YEAH!!"];
         });
     } else {
         self.button.transform = CGAffineTransformIdentity;
         [self.button setNeedsDisplay];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [[[UIAlertView alloc] initWithTitle:@"Force Touch Button" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [self showAlertTitle:@"Force Touch Button" message:@"YEAH!!"];
         });
     }
 }
@@ -145,5 +145,16 @@
     }
 }
 
+#pragma helper
+
+- (void) showAlertTitle:(NSString*) msg message:(NSString*)title {
+    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:msg message:title preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"OK"
+                               style:UIAlertActionStyleDefault
+                               handler:NULL];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 
 @end

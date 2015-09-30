@@ -13,7 +13,6 @@
 		F8B3605D1BBC81B500BECD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B360511BBC81B500BECD2F /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F8B3605E1BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360541BBC81B500BECD2F /* DFContinuousForceTouchGestureRecognizer.m */; settings = {ASSET_TAGS = (); }; };
 		F8B3605F1BBC81B500BECD2F /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B360551BBC81B500BECD2F /* elephant.png */; settings = {ASSET_TAGS = (); }; };
-		F8B360601BBC81B500BECD2F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8B360561BBC81B500BECD2F /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		F8B360611BBC81B500BECD2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360571BBC81B500BECD2F /* main.m */; settings = {ASSET_TAGS = (); }; };
 		F8B360621BBC81B500BECD2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B360591BBC81B500BECD2F /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -140,7 +139,6 @@
 				F8B3605F1BBC81B500BECD2F /* elephant.png in Resources */,
 				F8B3605D1BBC81B500BECD2F /* Main.storyboard in Resources */,
 				F8B3605B1BBC81B500BECD2F /* Assets.xcassets in Resources */,
-				F8B360601BBC81B500BECD2F /* Info.plist in Resources */,
 				F8B3605C1BBC81B500BECD2F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
