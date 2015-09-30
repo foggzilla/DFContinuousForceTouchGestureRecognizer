@@ -37,7 +37,7 @@
 }
 
 #pragma mark -
-#pragma UIForceTouchDelegate
+#pragma UIContinuousForceTouchDelegate
 
 - (void) forceTouchDidStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
     CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
