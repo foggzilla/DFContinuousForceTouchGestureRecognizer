@@ -45,8 +45,13 @@ Implement the `UIContinuousForceTouchDelegate` protocol to receive updates as th
 
 Customizing the feel of it can be done through these configuration properties:
 
-    forceTouchRecognizer.forceTouchDelay = 0.2f;              //how to long to tracking force touches before calling forceTouchRecognized
-    forceTouchRecognizer.baseForceTouchPressure = 3.0f;       //make it moderately hard to start tracking force touches
-    forceTouchRecognizer.triggeringForceTouchPressure = 6.0f; //make it really hard to trigger the force touches
+    //how to long to tracking force touches before calling forceTouchRecognized
+    forceTouchRecognizer.forceTouchDelay = 0.2f;    
+
+    //make it moderately hard to start tracking force touches
+    forceTouchRecognizer.baseForceTouchPressure = 3.0f;       
+
+    //make it really hard to trigger the force touches
+    forceTouchRecognizer.triggeringForceTouchPressure = 6.0f; 
     
 See `ViewController.m` for sample usage
