@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) UIContinuousForceTouchGestureRecognizer* forceTouchRecognizer;
+@property (strong, nonatomic) UITapGestureRecognizer* tapGestureRecognizer;
 @end
 
 @implementation ViewController
@@ -27,6 +28,11 @@
     _forceTouchRecognizer.baseForceTouchPressure = 3.0f;
     _forceTouchRecognizer.triggeringForceTouchPressure = 6.0f;
     _forceTouchRecognizer.forceTouchDelegate = self;
+    
+    //here to demonstrate how this works alonside a tap gesture recognizer
+    _tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+    
+    [self.imageView addGestureRecognizer:_tapGestureRecognizer];
     [self.imageView addGestureRecognizer:_forceTouchRecognizer];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,6 +40,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma UITapGestureRecognizer selector
+
+- (void) tapped:(id)sender {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[[UIAlertView alloc] initWithTitle:@"Tap" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    });
 }
 
 #pragma mark -
