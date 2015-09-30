@@ -19,14 +19,25 @@
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="L9B-dY-BW9">
                                 <rect key="frame" x="180" y="215" width="240" height="169"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBZ-cP-jAm">
+                                <rect key="frame" x="257" y="543" width="87" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="N45-E5-TJw"/>
+                                    <constraint firstAttribute="height" constant="57" id="nep-iZ-WXu"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="elephant"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aBZ-cP-jAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76k-LG-ldx"/>
                             <constraint firstItem="L9B-dY-BW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8T-bm-fOI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aBZ-cP-jAm" secondAttribute="bottom" id="mot-pg-KfU"/>
                             <constraint firstItem="L9B-dY-BW9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nfg-Lu-scD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="aBZ-cP-jAm" id="bBs-FC-JYK"/>
                         <outlet property="imageView" destination="L9B-dY-BW9" id="Hg0-bx-VLC"/>
                     </connections>
                 </viewController>
