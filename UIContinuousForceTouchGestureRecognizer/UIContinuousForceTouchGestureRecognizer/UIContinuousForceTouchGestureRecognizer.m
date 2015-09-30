@@ -98,8 +98,8 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
 //    }
     
     UITouch* aTouch = touches.anyObject;
-    if(_forceTouchDelegate && _forceTouchInitialTouchDetect) {
-        [_forceTouchDelegate forceTouchDidCancelWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
+    if(_forceTouchDelegate && _forceTouchInitialTouchDetect && [_forceTouchDelegate respondsToSelector:@selector(forceTouchRecognizer:didCancelWithForce:maxForce:)]) {
+        [_forceTouchDelegate forceTouchRecognizer:self didCancelWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
     }
     
     _forceTouchInitialTouchDetect = NO;
@@ -122,8 +122,8 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
     UITouch* aTouch = touches.anyObject;
     if(_forceTouchInitialTouchDetect) {
         self.state = UIGestureRecognizerStateRecognized;
-        if(_forceTouchDelegate) {
-            [_forceTouchDelegate forceTouchDidEndWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
+        if(_forceTouchDelegate && [_forceTouchDelegate respondsToSelector:@selector(forceTouchRecognizer:didEndWithForce:maxForce:)]) {
+            [_forceTouchDelegate forceTouchRecognizer:self didEndWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
         }
     } else {
         self.state = UIGestureRecognizerStateCancelled;
@@ -151,8 +151,8 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
     if(![self.view pointInside:pointInView withEvent:event]) {
         self.state = UIGestureRecognizerStateFailed;
         UITouch* aTouch = touches.anyObject;
-        if(_forceTouchDelegate && _forceTouchInitialTouchDetect) {
-            [_forceTouchDelegate forceTouchDidEndWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
+        if(_forceTouchDelegate && _forceTouchInitialTouchDetect && [_forceTouchDelegate respondsToSelector:@selector(forceTouchRecognizer:didEndWithForce:maxForce:)]) {
+            [_forceTouchDelegate forceTouchRecognizer:self didEndWithForce:aTouch.force maxForce:aTouch.maximumPossibleForce];
         }
         return;
     }
@@ -213,15 +213,15 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
         [self forceTouchFired:self];
     }
     
-    if(_forceTouchDelegate) {
-        [_forceTouchDelegate forceTouchDidMoveWithForce:touch.force maxForce:touch.maximumPossibleForce];
+    if(_forceTouchDelegate && [_forceTouchDelegate respondsToSelector:@selector(forceTouchRecognizer:didMoveWithForce:maxForce:)]) {
+        [_forceTouchDelegate forceTouchRecognizer:self didMoveWithForce:touch.force maxForce:touch.maximumPossibleForce];
     }
 }
 
 - (void) timeout:(id)sender {
     self.state = UIGestureRecognizerStateFailed;
-    if(_forceTouchDelegate && _forceTouchInitialTouchDetect) {
-        [_forceTouchDelegate forceTouchDidTimeout];
+    if(_forceTouchDelegate && _forceTouchInitialTouchDetect && [_forceTouchDelegate respondsToSelector:@selector(forceTouchDidTimeout:)]) {
+        [_forceTouchDelegate forceTouchDidTimeout:self];
     }
 }
 
@@ -238,7 +238,7 @@ static CGFloat const kDefaultTouchTimeout = 1.5f;
     //self.state = UIGestureRecognizerStateRecognized;
     
     if(_forceTouchDelegate) {
-        [_forceTouchDelegate forceTouchRecognized];
+        [_forceTouchDelegate forceTouchRecognized:self];
     }
 }
 

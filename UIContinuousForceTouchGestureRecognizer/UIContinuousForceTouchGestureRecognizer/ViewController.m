@@ -54,39 +54,42 @@
 #pragma mark -
 #pragma UIContinuousForceTouchDelegate
 
-- (void) forceTouchDidStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
-    CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
-    self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
-    [self.imageView setNeedsDisplay];
-}
-
-- (void) forceTouchDidMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
-    CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
-    self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
-    [self.imageView setNeedsDisplay];
-}
-
-- (void) forceTouchDidCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
-    self.imageView.transform = CGAffineTransformIdentity;
-    [self.imageView setNeedsDisplay];
-}
-
-- (void) forceTouchDidEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
-    self.imageView.transform = CGAffineTransformIdentity;
-    [self.imageView setNeedsDisplay];
-}
-
-- (void) forceTouchDidTimeout {
-    self.imageView.transform = CGAffineTransformIdentity;
-    [self.imageView setNeedsDisplay];
-}
-
-- (void) forceTouchRecognized {
+//required
+- (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer {
     self.imageView.transform = CGAffineTransformIdentity;
     [self.imageView setNeedsDisplay];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [[[UIAlertView alloc] initWithTitle:@"Force Touch" message:@"YEAH!!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     });
 }
+
+//optional
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
+    self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
+    [self.imageView setNeedsDisplay];
+}
+
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce {
+    CGFloat transformDelta = 1.0f + ((force/maxForce) / 3.0f);
+    self.imageView.transform = CGAffineTransformMakeScale(transformDelta, transformDelta);
+    [self.imageView setNeedsDisplay];
+}
+
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
+    self.imageView.transform = CGAffineTransformIdentity;
+    [self.imageView setNeedsDisplay];
+}
+
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce  {
+    self.imageView.transform = CGAffineTransformIdentity;
+    [self.imageView setNeedsDisplay];
+}
+
+- (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer {
+    self.imageView.transform = CGAffineTransformIdentity;
+    [self.imageView setNeedsDisplay];
+}
+
 
 @end

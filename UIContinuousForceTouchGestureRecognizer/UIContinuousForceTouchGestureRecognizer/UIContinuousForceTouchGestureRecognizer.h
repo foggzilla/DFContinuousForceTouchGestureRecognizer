@@ -8,25 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+@class UIContinuousForceTouchGestureRecognizer;
 
 @protocol UIContinuousForceTouchDelegate <NSObject>
-// Force touch started happening. Note that this is not necessary the moment when all touches started happening, just the moment when the first touch occurred with at least a force of baseForceTouchPressure
-- (void) forceTouchDidStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
-
-// Force touch movement happening. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchDidMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
-
-// Force touch was cancelled. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchDidCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
-
-// Force touch ended. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchDidEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
-
-// Force touch timed out. See notes about the timeout property below. This is only called if forceTouchDidStartWithForce had been called previously
-- (void) forceTouchDidTimeout;
 
 // Force touch was recognized according to the thresholds set by baseForceTouchPressure, triggeringForceTouchPressure, and forceTouchDelay
-- (void) forceTouchRecognized;
+- (void) forceTouchRecognized:(UIContinuousForceTouchGestureRecognizer*)recognizer;
+
+@optional
+// Force touch started happening. Note that this is not necessary the moment when all touches started happening, just the moment when the first touch occurred with at least a force of baseForceTouchPressure
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didStartWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+
+// Force touch movement happening. This is only called if forceTouchDidStartWithForce had been called previously
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didMoveWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+
+// Force touch was cancelled. This is only called if forceTouchDidStartWithForce had been called previously
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didCancelWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+
+// Force touch ended. This is only called if forceTouchDidStartWithForce had been called previously
+- (void) forceTouchRecognizer:(UIContinuousForceTouchGestureRecognizer*)recognizer didEndWithForce:(CGFloat)force maxForce:(CGFloat)maxForce;
+
+// Force touch timed out. See notes about the timeout property below. This is only called if forceTouchDidStartWithForce had been called previously
+- (void) forceTouchDidTimeout:(UIContinuousForceTouchGestureRecognizer*)recognizer;
+
+
 @end
 
 
