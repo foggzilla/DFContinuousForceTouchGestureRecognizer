@@ -1,0 +1,14 @@
+PODS:
+  - DFContinuousForceTouchGestureRecognizer (0.1.0)
+
+DEPENDENCIES:
+  - DFContinuousForceTouchGestureRecognizer (from `../`)
+
+EXTERNAL SOURCES:
+  DFContinuousForceTouchGestureRecognizer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DFContinuousForceTouchGestureRecognizer: a5cd6bf98478917e7745d57f15667ec98efb87f1
+
+COCOAPODS: 0.38.2

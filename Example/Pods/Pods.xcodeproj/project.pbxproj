@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08825212B1DC6CE47EEF00AA1884FDCC /* DFContinuousForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC5AE2D3C266CFEF4330340D0F4548C /* DFContinuousForceTouchGestureRecognizer.m */; };
+		1109A94E33B53AF3040A57643AC9024D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8461A2ECBDC8D9DCDC8D3520BE05ECD /* Foundation.framework */; };
+		298B84B0530A603ABDDD909D78874E41 /* DFContinuousForceTouchGestureRecognizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8988D4203F424A82512FFD9C64091E6D /* DFContinuousForceTouchGestureRecognizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55958E3D8976271E460B4A7F82D16C70 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DC4379574E26F09298C9425ECB75AE /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63A016186AF47D7B33750465ACD86681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8461A2ECBDC8D9DCDC8D3520BE05ECD /* Foundation.framework */; };
+		83330DE0ABDA7409E46E06215387C230 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD24B8CDEB7A5A3F288B11E1293F79 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m */; };
+		8B9DF9E1C8131B89B91FAA4AC58F3D94 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 100AD28E8E9F53D8739FC7AC30904499 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m */; };
+		8DE42A884861D0AAFCF7D763E199CEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8461A2ECBDC8D9DCDC8D3520BE05ECD /* Foundation.framework */; };
+		9957B5FF38301011F24D7173738F3E61 /* DFContinuousForceTouchGestureRecognizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 388B31D04C534186732C54A2CF745CED /* DFContinuousForceTouchGestureRecognizer-dummy.m */; };
+		BC09A0C86ECC5842260818C8FE950B47 /* DFContinuousForceTouchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = E3BD40B60FEB2CF01CB3A3867075BF92 /* DFContinuousForceTouchGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF706AF8C3A90CDA60991DCF679E39B6 /* DFContinuousForceTouchGestureRecognizer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFBBFAD35AEEC48A4CB0ACECC83D7160 /* DFContinuousForceTouchGestureRecognizer.bundle */; };
+		D2A182EC06822A754A66CBFA112E2287 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B2C3FCE56D465D834FADE4AD1E432E2 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		072F7A8BD2177FB76254DED6F7F75E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42FA7AE2B8AF53B5ABB8340A71F8010;
+			remoteInfo = "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer";
+		};
+		70DD26B8BFB487C027F65DE20B211523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4502A5E2AF8AE29D0633003E8A59345B;
+			remoteInfo = DFContinuousForceTouchGestureRecognizer;
+		};
+		F4D3929B514D3A88DF926D6C2961BD7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4502A5E2AF8AE29D0633003E8A59345B;
+			remoteInfo = DFContinuousForceTouchGestureRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054A4DF2FDC480201927AE692C3FB538 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0643964A004D855C8DB3F52271FCFF /* Pods-DFContinuousForceTouchGestureRecognizer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0D8368AFE9DDCBCF02FA2162568FF977 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FBC0AEEBA1C96042B4118A21D666A70 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		100AD28E8E9F53D8739FC7AC30904499 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m"; sourceTree = "<group>"; };
+		1B2C3FCE56D465D834FADE4AD1E432E2 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h"; sourceTree = "<group>"; };
+		23CD9D3B3D63288A4F08245D69802BA5 /* DFContinuousForceTouchGestureRecognizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DFContinuousForceTouchGestureRecognizer.xcconfig; sourceTree = "<group>"; };
+		2A21E5A7FF9F238CDECB12D2C3A55847 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2BC9BFCA5D01365F97F7A5D2DB13EDD0 /* DFContinuousForceTouchGestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFContinuousForceTouchGestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		388B31D04C534186732C54A2CF745CED /* DFContinuousForceTouchGestureRecognizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DFContinuousForceTouchGestureRecognizer-dummy.m"; sourceTree = "<group>"; };
+		38DC4379574E26F09298C9425ECB75AE /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3C18C8D98BFF1D6FCFBD3EF5943FF319 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3DCDAC83014FC7E9E6E965D49F9EC4AC /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		41F1E3235B967DFB64EB336A12AA83CB /* DFContinuousForceTouchGestureRecognizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DFContinuousForceTouchGestureRecognizer-prefix.pch"; sourceTree = "<group>"; };
+		44B6F3C442A37C87586EAA1D70280F70 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-resources.sh"; sourceTree = "<group>"; };
+		5AAD24B8CDEB7A5A3F288B11E1293F79 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m"; sourceTree = "<group>"; };
+		6F1FD11F808FBED5BDE80E7666D40FD1 /* Pods-DFContinuousForceTouchGestureRecognizer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example.modulemap"; sourceTree = "<group>"; };
+		81A0F8CE25480FA179EB06295EE8CAFB /* Pods_DFContinuousForceTouchGestureRecognizer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFContinuousForceTouchGestureRecognizer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85257B83FDCFCAC7ECD89F10A2EBFC29 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8988D4203F424A82512FFD9C64091E6D /* DFContinuousForceTouchGestureRecognizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DFContinuousForceTouchGestureRecognizer-umbrella.h"; sourceTree = "<group>"; };
+		932D6661E787BB3099DD44C2BED8BB98 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests-resources.sh"; sourceTree = "<group>"; };
+		A1202C7DCF408970D129EE7DCE66BDA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A21C64F19E3FD152179A745265141EDC /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DFContinuousForceTouchGestureRecognizer_Tests.modulemap"; sourceTree = "<group>"; };
+		AE7B478521E41DB5B67BBC77EB2FEA7F /* Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AFBBFAD35AEEC48A4CB0ACECC83D7160 /* DFContinuousForceTouchGestureRecognizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFContinuousForceTouchGestureRecognizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0EB81AA592142A4A196AE28A576B03 /* Pods_DFContinuousForceTouchGestureRecognizer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DFContinuousForceTouchGestureRecognizer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CDC5AE2D3C266CFEF4330340D0F4548C /* DFContinuousForceTouchGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFContinuousForceTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		DBE95B600119BF9EEFC34EB2ED79DC72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BD40B60FEB2CF01CB3A3867075BF92 /* DFContinuousForceTouchGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFContinuousForceTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		E48F8C1F7FED68D15396BCB93A561D99 /* DFContinuousForceTouchGestureRecognizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DFContinuousForceTouchGestureRecognizer.modulemap; sourceTree = "<group>"; };
+		E8461A2ECBDC8D9DCDC8D3520BE05ECD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F678469E25886506252CAA346A3CD13F /* Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6F432D34BB6D3BCE560B2516D18B0CE /* Pods-DFContinuousForceTouchGestureRecognizer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DFContinuousForceTouchGestureRecognizer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DFContinuousForceTouchGestureRecognizer-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F8ACE67F9352577CFEB10AB65592B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1109A94E33B53AF3040A57643AC9024D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		563DBDA9F059223AE466E2897098801F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A016186AF47D7B33750465ACD86681 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2884370BBB0F771CEF2C314E72C8409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B98A447868302D1B4333FA0DD6D78A8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE42A884861D0AAFCF7D763E199CEDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02378318AE4209D45C3DB9D9734E0543 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1202C7DCF408970D129EE7DCE66BDA8 /* Info.plist */,
+				A21C64F19E3FD152179A745265141EDC /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.modulemap */,
+				2A21E5A7FF9F238CDECB12D2C3A55847 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.markdown */,
+				3DCDAC83014FC7E9E6E965D49F9EC4AC /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-acknowledgements.plist */,
+				5AAD24B8CDEB7A5A3F288B11E1293F79 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m */,
+				85257B83FDCFCAC7ECD89F10A2EBFC29 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-frameworks.sh */,
+				932D6661E787BB3099DD44C2BED8BB98 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-resources.sh */,
+				38DC4379574E26F09298C9425ECB75AE /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h */,
+				0D8368AFE9DDCBCF02FA2162568FF977 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.debug.xcconfig */,
+				3C18C8D98BFF1D6FCFBD3EF5943FF319 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.release.xcconfig */,
+			);
+			name = "Pods-DFContinuousForceTouchGestureRecognizer_Tests";
+			path = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Tests";
+			sourceTree = "<group>";
+		};
+		299EA34CC741B08677F2218D6F9780AE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				80144BFBF08E6EF646F3A765AC9B0980 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		3CCA076DFB1BE01F61F3032CAA26D373 /* DFContinuousForceTouchGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				299EA34CC741B08677F2218D6F9780AE /* Pod */,
+				CF5AE09F3457D0479A2C198113A9797C /* Support Files */,
+			);
+			name = DFContinuousForceTouchGestureRecognizer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		53D8C061D754213A4A554B96CC2D15E7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CCA076DFB1BE01F61F3032CAA26D373 /* DFContinuousForceTouchGestureRecognizer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8461A2ECBDC8D9DCDC8D3520BE05ECD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6BF79AD1815121F23ADCB5138053DDC8 /* Pods-DFContinuousForceTouchGestureRecognizer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DBE95B600119BF9EEFC34EB2ED79DC72 /* Info.plist */,
+				6F1FD11F808FBED5BDE80E7666D40FD1 /* Pods-DFContinuousForceTouchGestureRecognizer_Example.modulemap */,
+				F678469E25886506252CAA346A3CD13F /* Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.markdown */,
+				AE7B478521E41DB5B67BBC77EB2FEA7F /* Pods-DFContinuousForceTouchGestureRecognizer_Example-acknowledgements.plist */,
+				100AD28E8E9F53D8739FC7AC30904499 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m */,
+				0FBC0AEEBA1C96042B4118A21D666A70 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-frameworks.sh */,
+				44B6F3C442A37C87586EAA1D70280F70 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-resources.sh */,
+				1B2C3FCE56D465D834FADE4AD1E432E2 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h */,
+				F6F432D34BB6D3BCE560B2516D18B0CE /* Pods-DFContinuousForceTouchGestureRecognizer_Example.debug.xcconfig */,
+				0A0643964A004D855C8DB3F52271FCFF /* Pods-DFContinuousForceTouchGestureRecognizer_Example.release.xcconfig */,
+			);
+			name = "Pods-DFContinuousForceTouchGestureRecognizer_Example";
+			path = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				53D8C061D754213A4A554B96CC2D15E7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				F73D277F6FFE9C5E722CD0A6C358CAE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80144BFBF08E6EF646F3A765AC9B0980 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3BD40B60FEB2CF01CB3A3867075BF92 /* DFContinuousForceTouchGestureRecognizer.h */,
+				CDC5AE2D3C266CFEF4330340D0F4548C /* DFContinuousForceTouchGestureRecognizer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFBBFAD35AEEC48A4CB0ACECC83D7160 /* DFContinuousForceTouchGestureRecognizer.bundle */,
+				2BC9BFCA5D01365F97F7A5D2DB13EDD0 /* DFContinuousForceTouchGestureRecognizer.framework */,
+				81A0F8CE25480FA179EB06295EE8CAFB /* Pods_DFContinuousForceTouchGestureRecognizer_Example.framework */,
+				BA0EB81AA592142A4A196AE28A576B03 /* Pods_DFContinuousForceTouchGestureRecognizer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF5AE09F3457D0479A2C198113A9797C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E48F8C1F7FED68D15396BCB93A561D99 /* DFContinuousForceTouchGestureRecognizer.modulemap */,
+				23CD9D3B3D63288A4F08245D69802BA5 /* DFContinuousForceTouchGestureRecognizer.xcconfig */,
+				FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */,
+				388B31D04C534186732C54A2CF745CED /* DFContinuousForceTouchGestureRecognizer-dummy.m */,
+				41F1E3235B967DFB64EB336A12AA83CB /* DFContinuousForceTouchGestureRecognizer-prefix.pch */,
+				8988D4203F424A82512FFD9C64091E6D /* DFContinuousForceTouchGestureRecognizer-umbrella.h */,
+				054A4DF2FDC480201927AE692C3FB538 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DFContinuousForceTouchGestureRecognizer";
+			sourceTree = "<group>";
+		};
+		F73D277F6FFE9C5E722CD0A6C358CAE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BF79AD1815121F23ADCB5138053DDC8 /* Pods-DFContinuousForceTouchGestureRecognizer_Example */,
+				02378318AE4209D45C3DB9D9734E0543 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80A84AAEC4D40EF63B47A93099928542 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A182EC06822A754A66CBFA112E2287 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10BF5DD87C7A33393FF25E86B2949DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				298B84B0530A603ABDDD909D78874E41 /* DFContinuousForceTouchGestureRecognizer-umbrella.h in Headers */,
+				BC09A0C86ECC5842260818C8FE950B47 /* DFContinuousForceTouchGestureRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD939CD6AFA5821E8DD77C04AA220724 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55958E3D8976271E460B4A7F82D16C70 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4502A5E2AF8AE29D0633003E8A59345B /* DFContinuousForceTouchGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5633F9262F6B89CEF121D2057BED5A /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer" */;
+			buildPhases = (
+				97534FD159A20638648C3FE91E1A4A5A /* Sources */,
+				563DBDA9F059223AE466E2897098801F /* Frameworks */,
+				4D398BEC00AB29E2AE29B535C31B8590 /* Resources */,
+				A10BF5DD87C7A33393FF25E86B2949DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC1716DBFDE80133FB51810E6AC148E0 /* PBXTargetDependency */,
+			);
+			name = DFContinuousForceTouchGestureRecognizer;
+			productName = DFContinuousForceTouchGestureRecognizer;
+			productReference = 2BC9BFCA5D01365F97F7A5D2DB13EDD0 /* DFContinuousForceTouchGestureRecognizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57F63C0ED28C12E1AB8EC9420FB0681C /* Pods-DFContinuousForceTouchGestureRecognizer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836C28802E96639DA9F1B1AB1B7743E6 /* Build configuration list for PBXNativeTarget "Pods-DFContinuousForceTouchGestureRecognizer_Tests" */;
+			buildPhases = (
+				3474752D86B4C1339210E7D6FE95068F /* Sources */,
+				4F8ACE67F9352577CFEB10AB65592B76 /* Frameworks */,
+				AD939CD6AFA5821E8DD77C04AA220724 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F094D88D6A963DB78A32A44087264CE8 /* PBXTargetDependency */,
+			);
+			name = "Pods-DFContinuousForceTouchGestureRecognizer_Tests";
+			productName = "Pods-DFContinuousForceTouchGestureRecognizer_Tests";
+			productReference = BA0EB81AA592142A4A196AE28A576B03 /* Pods_DFContinuousForceTouchGestureRecognizer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A42FA7AE2B8AF53B5ABB8340A71F8010 /* DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A278BB709D885E02AC41A05E8127CC /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer" */;
+			buildPhases = (
+				6FAA2EB3E59FE573692127EDEB1726F2 /* Sources */,
+				B2884370BBB0F771CEF2C314E72C8409 /* Frameworks */,
+				0C4B576E59CB5EEC2875C9E3AE970456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer";
+			productName = "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer";
+			productReference = AFBBFAD35AEEC48A4CB0ACECC83D7160 /* DFContinuousForceTouchGestureRecognizer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C4F033C17E6354314C6F993707B0F02D /* Pods-DFContinuousForceTouchGestureRecognizer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC6C8AE90FB69B8CF6C9DE686EADFA6 /* Build configuration list for PBXNativeTarget "Pods-DFContinuousForceTouchGestureRecognizer_Example" */;
+			buildPhases = (
+				882249880D8AAB81276BCA3426F0BEBC /* Sources */,
+				B98A447868302D1B4333FA0DD6D78A8B /* Frameworks */,
+				80A84AAEC4D40EF63B47A93099928542 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110EC6CFA450016038E153A134333A6E /* PBXTargetDependency */,
+			);
+			name = "Pods-DFContinuousForceTouchGestureRecognizer_Example";
+			productName = "Pods-DFContinuousForceTouchGestureRecognizer_Example";
+			productReference = 81A0F8CE25480FA179EB06295EE8CAFB /* Pods_DFContinuousForceTouchGestureRecognizer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4502A5E2AF8AE29D0633003E8A59345B /* DFContinuousForceTouchGestureRecognizer */,
+				A42FA7AE2B8AF53B5ABB8340A71F8010 /* DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer */,
+				C4F033C17E6354314C6F993707B0F02D /* Pods-DFContinuousForceTouchGestureRecognizer_Example */,
+				57F63C0ED28C12E1AB8EC9420FB0681C /* Pods-DFContinuousForceTouchGestureRecognizer_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C4B576E59CB5EEC2875C9E3AE970456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D398BEC00AB29E2AE29B535C31B8590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF706AF8C3A90CDA60991DCF679E39B6 /* DFContinuousForceTouchGestureRecognizer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3474752D86B4C1339210E7D6FE95068F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83330DE0ABDA7409E46E06215387C230 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAA2EB3E59FE573692127EDEB1726F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882249880D8AAB81276BCA3426F0BEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9DF9E1C8131B89B91FAA4AC58F3D94 /* Pods-DFContinuousForceTouchGestureRecognizer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97534FD159A20638648C3FE91E1A4A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9957B5FF38301011F24D7173738F3E61 /* DFContinuousForceTouchGestureRecognizer-dummy.m in Sources */,
+				08825212B1DC6CE47EEF00AA1884FDCC /* DFContinuousForceTouchGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		110EC6CFA450016038E153A134333A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DFContinuousForceTouchGestureRecognizer;
+			target = 4502A5E2AF8AE29D0633003E8A59345B /* DFContinuousForceTouchGestureRecognizer */;
+			targetProxy = F4D3929B514D3A88DF926D6C2961BD7F /* PBXContainerItemProxy */;
+		};
+		CC1716DBFDE80133FB51810E6AC148E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer";
+			target = A42FA7AE2B8AF53B5ABB8340A71F8010 /* DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer */;
+			targetProxy = 072F7A8BD2177FB76254DED6F7F75E47 /* PBXContainerItemProxy */;
+		};
+		F094D88D6A963DB78A32A44087264CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DFContinuousForceTouchGestureRecognizer;
+			target = 4502A5E2AF8AE29D0633003E8A59345B /* DFContinuousForceTouchGestureRecognizer */;
+			targetProxy = 70DD26B8BFB487C027F65DE20B211523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09EBE6083A7AABA2A361A4EA038AB3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C18C8D98BFF1D6FCFBD3EF5943FF319 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Tests/Pods-DFContinuousForceTouchGestureRecognizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DFContinuousForceTouchGestureRecognizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2BB52BC7208C2FC5084343B0E8DC5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8368AFE9DDCBCF02FA2162568FF977 /* Pods-DFContinuousForceTouchGestureRecognizer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Tests/Pods-DFContinuousForceTouchGestureRecognizer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DFContinuousForceTouchGestureRecognizer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F28A30C6C1B7867CE4B65D2FE099E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		470A3B62E3977C35F09445FB5A86304D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A0643964A004D855C8DB3F52271FCFF /* Pods-DFContinuousForceTouchGestureRecognizer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Example/Pods-DFContinuousForceTouchGestureRecognizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DFContinuousForceTouchGestureRecognizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B24E7A7EE63CB59C8FCEE052D682460D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F432D34BB6D3BCE560B2516D18B0CE /* Pods-DFContinuousForceTouchGestureRecognizer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DFContinuousForceTouchGestureRecognizer_Example/Pods-DFContinuousForceTouchGestureRecognizer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DFContinuousForceTouchGestureRecognizer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B32F814E61247E287DEBA20CEFB3486E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B4134486597FBF2E44E30589106BCFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DFContinuousForceTouchGestureRecognizer/DFContinuousForceTouchGestureRecognizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DFContinuousForceTouchGestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DFContinuousForceTouchGestureRecognizer/DFContinuousForceTouchGestureRecognizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0569DF294A0E2895EBCD2409012FB82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFE5094B56415758FD7ED560E5F6348 /* DFContinuousForceTouchGestureRecognizer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DFContinuousForceTouchGestureRecognizer/DFContinuousForceTouchGestureRecognizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DFContinuousForceTouchGestureRecognizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DFContinuousForceTouchGestureRecognizer/DFContinuousForceTouchGestureRecognizer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = DFContinuousForceTouchGestureRecognizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A5633F9262F6B89CEF121D2057BED5A /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4134486597FBF2E44E30589106BCFEC /* Debug */,
+				E0569DF294A0E2895EBCD2409012FB82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836C28802E96639DA9F1B1AB1B7743E6 /* Build configuration list for PBXNativeTarget "Pods-DFContinuousForceTouchGestureRecognizer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB52BC7208C2FC5084343B0E8DC5CCC /* Debug */,
+				09EBE6083A7AABA2A361A4EA038AB3C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A278BB709D885E02AC41A05E8127CC /* Build configuration list for PBXNativeTarget "DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32F814E61247E287DEBA20CEFB3486E /* Debug */,
+				2F28A30C6C1B7867CE4B65D2FE099E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC6C8AE90FB69B8CF6C9DE686EADFA6 /* Build configuration list for PBXNativeTarget "Pods-DFContinuousForceTouchGestureRecognizer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24E7A7EE63CB59C8FCEE052D682460D /* Debug */,
+				470A3B62E3977C35F09445FB5A86304D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DFContinuousForceTouchGestureRecognizer-DFContinuousForceTouchGestureRecognizer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DFContinuousForceTouchGestureRecognizer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DFContinuousForceTouchGestureRecognizer_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DFContinuousForceTouchGestureRecognizer_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4502A5E2AF8AE29D0633003E8A59345B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>57F63C0ED28C12E1AB8EC9420FB0681C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A42FA7AE2B8AF53B5ABB8340A71F8010</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4F033C17E6354314C6F993707B0F02D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

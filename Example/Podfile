@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DFContinuousForceTouchGestureRecognizer_Example', :exclusive => true do
+  pod "DFContinuousForceTouchGestureRecognizer", :path => "../"
+end
+
+target 'DFContinuousForceTouchGestureRecognizer_Tests', :exclusive => true do
+  pod "DFContinuousForceTouchGestureRecognizer", :path => "../"
+
+  
+end

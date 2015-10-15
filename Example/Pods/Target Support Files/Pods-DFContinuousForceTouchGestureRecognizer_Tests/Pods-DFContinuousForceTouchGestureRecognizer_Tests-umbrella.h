@@ -1,0 +1,6 @@
+#import <UIKit/UIKit.h>
+
+
+FOUNDATION_EXPORT double Pods_DFContinuousForceTouchGestureRecognizer_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DFContinuousForceTouchGestureRecognizer_TestsVersionString[];
+
