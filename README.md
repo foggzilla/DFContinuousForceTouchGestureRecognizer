@@ -45,7 +45,7 @@ Create a `DFContinuousForceTouchGestureRecognizer`, add it to a view like any ot
 
 Implement the `DFContinuousForceTouchDelegate` protocol to receive updates as the user's force changes:
 
-#pragma DFContinuousForceTouchDelegate
+    #pragma DFContinuousForceTouchDelegate
 
     - (void) forceTouchRecognized:(DFContinuousForceTouchGestureRecognizer*)recognizer {
         //trigger force touch action
